@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class QLViewController;
+
 @interface QLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) QLViewController *rootViewController;
 
 @end

@@ -18,6 +18,8 @@
 		AD41A5B115C935DF001FC18C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD41A59815C935DE001FC18C /* Foundation.framework */; };
 		AD41A5B915C935DF001FC18C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD41A5B715C935DF001FC18C /* InfoPlist.strings */; };
 		AD41A5BC15C935DF001FC18C /* QuizLordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A5BB15C935DF001FC18C /* QuizLordTests.m */; };
+		AD41A5CF15C93D9A001FC18C /* QLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A5CE15C93D9A001FC18C /* QLViewController.m */; };
+		AD41A5D215C94169001FC18C /* QLViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		AD41A5B815C935DF001FC18C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD41A5BA15C935DF001FC18C /* QuizLordTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizLordTests.h; sourceTree = "<group>"; };
 		AD41A5BB15C935DF001FC18C /* QuizLordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizLordTests.m; sourceTree = "<group>"; };
+		AD41A5CD15C93D9A001FC18C /* QLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLViewController.h; sourceTree = "<group>"; };
+		AD41A5CE15C93D9A001FC18C /* QLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLViewController.m; sourceTree = "<group>"; };
+		AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 				AD41A5A515C935DE001FC18C /* QLAppDelegate.h */,
 				AD41A5A615C935DE001FC18C /* QLAppDelegate.m */,
 				AD41A59D15C935DE001FC18C /* Supporting Files */,
+				AD41A5CD15C93D9A001FC18C /* QLViewController.h */,
+				AD41A5CE15C93D9A001FC18C /* QLViewController.m */,
+				AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */,
 			);
 			path = QuizLord;
 			sourceTree = "<group>";
@@ -216,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD41A5A115C935DE001FC18C /* InfoPlist.strings in Resources */,
+				AD41A5D215C94169001FC18C /* QLViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 			files = (
 				AD41A5A315C935DE001FC18C /* main.m in Sources */,
 				AD41A5A715C935DE001FC18C /* QLAppDelegate.m in Sources */,
+				AD41A5CF15C93D9A001FC18C /* QLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +427,7 @@
 				AD41A5C115C935DF001FC18C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD41A5C215C935DF001FC18C /* Build configuration list for PBXNativeTarget "QuizLordTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +436,7 @@
 				AD41A5C415C935DF001FC18C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
