@@ -20,6 +20,21 @@
 		AD41A5BC15C935DF001FC18C /* QuizLordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A5BB15C935DF001FC18C /* QuizLordTests.m */; };
 		AD41A5CF15C93D9A001FC18C /* QLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A5CE15C93D9A001FC18C /* QLViewController.m */; };
 		AD41A5D215C94169001FC18C /* QLViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */; };
+		AD41A60715CA6D30001FC18C /* quizlord.thrift in Resources */ = {isa = PBXBuildFile; fileRef = AD41A60615CA6D30001FC18C /* quizlord.thrift */; };
+		AD41A69415CA875C001FC18C /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67415CA875C001FC18C /* TBinaryProtocol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69515CA875C001FC18C /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67715CA875C001FC18C /* TProtocolException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69615CA875C001FC18C /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67A15CA875C001FC18C /* TProtocolUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69715CA875C001FC18C /* TSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67D15CA875C001FC18C /* TSocketServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69815CA875C001FC18C /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67F15CA875C001FC18C /* TApplicationException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69915CA875C001FC18C /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A68115CA875C001FC18C /* TException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69A15CA875C001FC18C /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A68615CA875C001FC18C /* THTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69B15CA875C001FC18C /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A68815CA875C001FC18C /* TMemoryBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69C15CA875C001FC18C /* TNSFileHandleTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A68A15CA875C001FC18C /* TNSFileHandleTransport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69D15CA875C001FC18C /* TNSStreamTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A68C15CA875C001FC18C /* TNSStreamTransport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69E15CA875C001FC18C /* TSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A68E15CA875C001FC18C /* TSocketClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A69F15CA875C001FC18C /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A69115CA875C001FC18C /* TTransportException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A6A015CA875C001FC18C /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A69315CA875C001FC18C /* TSharedProcessorFactory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD41A6B115CA8DE5001FC18C /* quizlord.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A6B015CA8DE5001FC18C /* quizlord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +67,40 @@
 		AD41A5CD15C93D9A001FC18C /* QLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLViewController.h; sourceTree = "<group>"; };
 		AD41A5CE15C93D9A001FC18C /* QLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLViewController.m; sourceTree = "<group>"; };
 		AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLViewController_iPhone.xib; sourceTree = "<group>"; };
+		AD41A60615CA6D30001FC18C /* quizlord.thrift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizlord.thrift; sourceTree = "<group>"; };
+		AD41A67315CA875C001FC18C /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		AD41A67415CA875C001FC18C /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		AD41A67515CA875C001FC18C /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		AD41A67615CA875C001FC18C /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		AD41A67715CA875C001FC18C /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		AD41A67815CA875C001FC18C /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		AD41A67915CA875C001FC18C /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		AD41A67A15CA875C001FC18C /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		AD41A67C15CA875C001FC18C /* TSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketServer.h; sourceTree = "<group>"; };
+		AD41A67D15CA875C001FC18C /* TSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketServer.m; sourceTree = "<group>"; };
+		AD41A67E15CA875C001FC18C /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		AD41A67F15CA875C001FC18C /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		AD41A68015CA875C001FC18C /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		AD41A68115CA875C001FC18C /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		AD41A68215CA875C001FC18C /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		AD41A68315CA875C001FC18C /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		AD41A68515CA875C001FC18C /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		AD41A68615CA875C001FC18C /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		AD41A68715CA875C001FC18C /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		AD41A68815CA875C001FC18C /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		AD41A68915CA875C001FC18C /* TNSFileHandleTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSFileHandleTransport.h; sourceTree = "<group>"; };
+		AD41A68A15CA875C001FC18C /* TNSFileHandleTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSFileHandleTransport.m; sourceTree = "<group>"; };
+		AD41A68B15CA875C001FC18C /* TNSStreamTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSStreamTransport.h; sourceTree = "<group>"; };
+		AD41A68C15CA875C001FC18C /* TNSStreamTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSStreamTransport.m; sourceTree = "<group>"; };
+		AD41A68D15CA875C001FC18C /* TSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketClient.h; sourceTree = "<group>"; };
+		AD41A68E15CA875C001FC18C /* TSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketClient.m; sourceTree = "<group>"; };
+		AD41A68F15CA875C001FC18C /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		AD41A69015CA875C001FC18C /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		AD41A69115CA875C001FC18C /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		AD41A69215CA875C001FC18C /* TSharedProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSharedProcessorFactory.h; sourceTree = "<group>"; };
+		AD41A69315CA875C001FC18C /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
+		AD41A6AF15CA8DE5001FC18C /* quizlord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quizlord.h; sourceTree = "<group>"; };
+		AD41A6B015CA8DE5001FC18C /* quizlord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quizlord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +130,9 @@
 		AD41A58715C935DE001FC18C = {
 			isa = PBXGroup;
 			children = (
+				AD41A60615CA6D30001FC18C /* quizlord.thrift */,
+				AD41A6AE15CA8DE5001FC18C /* gen-cocoa */,
+				AD41A67115CA875C001FC18C /* thrift */,
 				AD41A59C15C935DE001FC18C /* QuizLord */,
 				AD41A5B415C935DF001FC18C /* QuizLordTests */,
 				AD41A59515C935DE001FC18C /* Frameworks */,
@@ -149,6 +201,77 @@
 				AD41A5B715C935DF001FC18C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD41A67115CA875C001FC18C /* thrift */ = {
+			isa = PBXGroup;
+			children = (
+				AD41A67215CA875C001FC18C /* protocol */,
+				AD41A67B15CA875C001FC18C /* server */,
+				AD41A67E15CA875C001FC18C /* TApplicationException.h */,
+				AD41A67F15CA875C001FC18C /* TApplicationException.m */,
+				AD41A68015CA875C001FC18C /* TException.h */,
+				AD41A68115CA875C001FC18C /* TException.m */,
+				AD41A68215CA875C001FC18C /* TProcessor.h */,
+				AD41A68315CA875C001FC18C /* TProcessorFactory.h */,
+				AD41A68415CA875C001FC18C /* transport */,
+				AD41A69215CA875C001FC18C /* TSharedProcessorFactory.h */,
+				AD41A69315CA875C001FC18C /* TSharedProcessorFactory.m */,
+			);
+			path = thrift;
+			sourceTree = "<group>";
+		};
+		AD41A67215CA875C001FC18C /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AD41A67315CA875C001FC18C /* TBinaryProtocol.h */,
+				AD41A67415CA875C001FC18C /* TBinaryProtocol.m */,
+				AD41A67515CA875C001FC18C /* TProtocol.h */,
+				AD41A67615CA875C001FC18C /* TProtocolException.h */,
+				AD41A67715CA875C001FC18C /* TProtocolException.m */,
+				AD41A67815CA875C001FC18C /* TProtocolFactory.h */,
+				AD41A67915CA875C001FC18C /* TProtocolUtil.h */,
+				AD41A67A15CA875C001FC18C /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		AD41A67B15CA875C001FC18C /* server */ = {
+			isa = PBXGroup;
+			children = (
+				AD41A67C15CA875C001FC18C /* TSocketServer.h */,
+				AD41A67D15CA875C001FC18C /* TSocketServer.m */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		AD41A68415CA875C001FC18C /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				AD41A68515CA875C001FC18C /* THTTPClient.h */,
+				AD41A68615CA875C001FC18C /* THTTPClient.m */,
+				AD41A68715CA875C001FC18C /* TMemoryBuffer.h */,
+				AD41A68815CA875C001FC18C /* TMemoryBuffer.m */,
+				AD41A68915CA875C001FC18C /* TNSFileHandleTransport.h */,
+				AD41A68A15CA875C001FC18C /* TNSFileHandleTransport.m */,
+				AD41A68B15CA875C001FC18C /* TNSStreamTransport.h */,
+				AD41A68C15CA875C001FC18C /* TNSStreamTransport.m */,
+				AD41A68D15CA875C001FC18C /* TSocketClient.h */,
+				AD41A68E15CA875C001FC18C /* TSocketClient.m */,
+				AD41A68F15CA875C001FC18C /* TTransport.h */,
+				AD41A69015CA875C001FC18C /* TTransportException.h */,
+				AD41A69115CA875C001FC18C /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		AD41A6AE15CA8DE5001FC18C /* gen-cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				AD41A6AF15CA8DE5001FC18C /* quizlord.h */,
+				AD41A6B015CA8DE5001FC18C /* quizlord.m */,
+			);
+			path = "gen-cocoa";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +348,7 @@
 			files = (
 				AD41A5A115C935DE001FC18C /* InfoPlist.strings in Resources */,
 				AD41A5D215C94169001FC18C /* QLViewController_iPhone.xib in Resources */,
+				AD41A60715CA6D30001FC18C /* quizlord.thrift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +386,20 @@
 				AD41A5A315C935DE001FC18C /* main.m in Sources */,
 				AD41A5A715C935DE001FC18C /* QLAppDelegate.m in Sources */,
 				AD41A5CF15C93D9A001FC18C /* QLViewController.m in Sources */,
+				AD41A69415CA875C001FC18C /* TBinaryProtocol.m in Sources */,
+				AD41A69515CA875C001FC18C /* TProtocolException.m in Sources */,
+				AD41A69615CA875C001FC18C /* TProtocolUtil.m in Sources */,
+				AD41A69715CA875C001FC18C /* TSocketServer.m in Sources */,
+				AD41A69815CA875C001FC18C /* TApplicationException.m in Sources */,
+				AD41A69915CA875C001FC18C /* TException.m in Sources */,
+				AD41A69A15CA875C001FC18C /* THTTPClient.m in Sources */,
+				AD41A69B15CA875C001FC18C /* TMemoryBuffer.m in Sources */,
+				AD41A69C15CA875C001FC18C /* TNSFileHandleTransport.m in Sources */,
+				AD41A69D15CA875C001FC18C /* TNSStreamTransport.m in Sources */,
+				AD41A69E15CA875C001FC18C /* TSocketClient.m in Sources */,
+				AD41A69F15CA875C001FC18C /* TTransportException.m in Sources */,
+				AD41A6A015CA875C001FC18C /* TSharedProcessorFactory.m in Sources */,
+				AD41A6B115CA8DE5001FC18C /* quizlord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
