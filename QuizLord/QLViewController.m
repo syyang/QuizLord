@@ -33,6 +33,7 @@
 @synthesize postQuestionButton = _postQuestionButton;
 @synthesize questionField = _questionField;
 @synthesize answerField = _answerField;
+@synthesize mainQueue = _mainQueue;
 
 - (void)viewDidLoad
 {
@@ -40,7 +41,7 @@
 
   _mainQueue = [NSOperationQueue mainQueue];
   _asyncQueue = [[NSOperationQueue alloc] init];
-  [_asyncQueue setMaxConcurrentOperationCount:2];
+  [_asyncQueue setMaxConcurrentOperationCount:4];
 
   NSURL *url = [NSURL URLWithString:@"http://localhost:8080"];
   THTTPClient *transport = [[THTTPClient alloc] initWithURL:url];
@@ -84,30 +85,45 @@
 }
 
 - (IBAction)postQuestion:(id)sender
-{  
-  NSLog(@"Posting a question...");
+{
+  __unsafe_unretained QLViewController *weakSelf = self;
+  [_asyncQueue addOperationWithBlock:^(void) {
 
-  int a = arc4random() % 100;
-  int b = arc4random() % 100;
-  
-  NSString *questionStr = [NSString stringWithFormat:@"%d + %d", a, b];
-  NSString *answerStr = [NSString stringWithFormat:@"%d", a + b];
-  
-  Question *question = [[Question alloc] initWithQuestion:questionStr
-                                                   answer:answerStr];
+    __unsafe_unretained QLViewController *weakSelf2 = weakSelf;
+    @try {
+      NSLog(@"Posting a question...");
 
-  // update the labels
-  [_questionField setText:questionStr];
-  [_answerField setText:answerStr];
+      int a = arc4random() % 100;
+      int b = arc4random() % 100;
 
-  NSLog(@"Add question: %@", question);
-  [_questionStore addQuestion:question];
-  
-  NSLog(@"Get questions:");
-  NSArray * questions = [_questionStore getQuestions];
-  for (NSString *question in questions) {
-    NSLog(@"%@", question);
-  }
+      NSString *questionStr = [NSString stringWithFormat:@"%d + %d", a, b];
+      NSString *answerStr = [NSString stringWithFormat:@"%d", a + b];
+
+      Question *question = [[Question alloc] initWithQuestion:questionStr
+                                                       answer:answerStr];
+
+      NSLog(@"Add question: %@", question);
+      [[weakSelf questionStore] addQuestion:question];
+
+      NSLog(@"Get questions:");
+      NSArray * questions = [[weakSelf questionStore] getQuestions];
+      for (NSString *question in questions) {
+        NSLog(@"%@", question);
+      }
+
+      [[weakSelf mainQueue] addOperationWithBlock:^(void) {
+        [[weakSelf2 questionField] setText:questionStr];
+        [[weakSelf2 answerField] setText:answerStr];
+      }];
+    }
+    @catch (NSException *e) {
+      NSLog(@"Error: %@", e);
+      [[weakSelf mainQueue] addOperationWithBlock:^(void) {
+        [[weakSelf2 questionField] setText:@"ERROR!"];
+        [[weakSelf2 answerField] setText:@"ERROR!"];
+      }];
+    }
+  }];
 }
 
 @end
