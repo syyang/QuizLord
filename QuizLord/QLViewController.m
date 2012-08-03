@@ -16,7 +16,13 @@
 
 @interface QLViewController()
 
-@property (strong, nonatomic) IBOutlet UIButton *buttonPostQuestion;
+@property (nonatomic, strong) IBOutlet UIButton *postQuestionButton;
+@property (nonatomic, strong) IBOutlet UILabel *questionField;
+@property (nonatomic, strong) IBOutlet UILabel *answerField;
+
+@property (nonatomic, strong) QuestionStoreClient *questionStore;
+@property (nonatomic, strong) NSOperationQueue *mainQueue;
+@property (nonatomic, strong) NSOperationQueue *asyncQueue;
 
 - (IBAction)postQuestion:(id)sender;
 
@@ -24,16 +30,35 @@
 
 @implementation QLViewController
 
-@synthesize buttonPostQuestion = _buttonPostQuestion;
+@synthesize postQuestionButton = _postQuestionButton;
+@synthesize questionField = _questionField;
+@synthesize answerField = _answerField;
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+
+  _mainQueue = [NSOperationQueue mainQueue];
+  _asyncQueue = [[NSOperationQueue alloc] init];
+  [_asyncQueue setMaxConcurrentOperationCount:2];
+
+  NSURL *url = [NSURL URLWithString:@"http://localhost:8080"];
+  THTTPClient *transport = [[THTTPClient alloc] initWithURL:url];
+
+  TBinaryProtocol *protocol = [[TBinaryProtocol alloc]
+                               initWithTransport:transport
+                               strictRead:YES
+                               strictWrite:YES];
+  _questionStore = [[QuestionStoreClient alloc] initWithProtocol:protocol];
+
+  NSLog(@"Initialized client: %@", url);
 }
 
 - (void)viewDidUnload
 {
-  self.buttonPostQuestion = nil;
+  self.postQuestionButton = nil;
+  self.questionField = nil;
+  self.answerField = nil;
   [super viewDidUnload];
 }
 
@@ -61,32 +86,25 @@
 - (IBAction)postQuestion:(id)sender
 {  
   NSLog(@"Posting a question...");
-  
-  NSURL *url = [NSURL URLWithString:@"http://localhost:8080"];
-  THTTPClient *transport = [[THTTPClient alloc] initWithURL:url];
 
-  TBinaryProtocol *protocol = [[TBinaryProtocol alloc]
-                               initWithTransport:transport
-                                      strictRead:YES
-                                     strictWrite:YES];
-  QuestionStoreClient *client = [[QuestionStoreClient alloc]
-                                 initWithProtocol:protocol];
-  
-  NSLog(@"Established connection...");
-
-  NSInteger a = arc4random() % 100;
-  NSInteger b = arc4random() % 100;
+  int a = arc4random() % 100;
+  int b = arc4random() % 100;
   
   NSString *questionStr = [NSString stringWithFormat:@"%d + %d", a, b];
   NSString *answerStr = [NSString stringWithFormat:@"%d", a + b];
   
   Question *question = [[Question alloc] initWithQuestion:questionStr
                                                    answer:answerStr];
+
+  // update the labels
+  [_questionField setText:questionStr];
+  [_answerField setText:answerStr];
+
   NSLog(@"Add question: %@", question);
-  [client addQuestion:question];
+  [_questionStore addQuestion:question];
   
   NSLog(@"Get questions:");
-  NSArray * questions = [client getQuestions];
+  NSArray * questions = [_questionStore getQuestions];
   for (NSString *question in questions) {
     NSLog(@"%@", question);
   }
