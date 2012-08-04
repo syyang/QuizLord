@@ -31,8 +31,11 @@
     qvc = [[QLViewController alloc]
       initWithNibName:@"QLViewController_iPad" bundle:nil];
   }
-  [[self window] setRootViewController:qvc];
-  
+
+  UINavigationController *unc = [[UINavigationController alloc]
+                                 initWithRootViewController:qvc];
+  [[self window] setRootViewController:unc];
+
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
   
