@@ -26,7 +26,7 @@
   if ([[UIDevice currentDevice] userInterfaceIdiom] ==
       UIUserInterfaceIdiomPhone) {
     qvc = [[QLViewController alloc]
-      initWithNibName:@"QLViewController_iPhone" bundle:nil];
+      initWithNibName:@"QLViewController" bundle:nil];
   } else {
     qvc = [[QLViewController alloc]
       initWithNibName:@"QLViewController_iPad" bundle:nil];

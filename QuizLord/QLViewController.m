@@ -14,6 +14,8 @@
 #import "TBinaryProtocol.h"
 #import "quizlord.h"
 
+#import "SettingsViewController.h"
+
 static NSString *kAPI_SERVER_BASE_URL = @"http://localhost:8080";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +45,8 @@ static NSString *kAPI_SERVER_BASE_URL = @"http://localhost:8080";
                        mainQueue = _mainQueue;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//private
+// private
+
 - (IBAction)postQuestion:(id)sender
 {
   __unsafe_unretained QLViewController *weakSelf = self;
@@ -90,8 +93,14 @@ static NSString *kAPI_SERVER_BASE_URL = @"http://localhost:8080";
   }];
 }
 
+- (IBAction)showSettings:(id)sender
+{
+  SettingsViewController *svc = [[SettingsViewController alloc] init];
+  [self presentModalViewController:svc animated:YES];
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//UIViewController
+// UIViewController
 
 - (void)viewDidLoad
 {
@@ -125,6 +134,19 @@ static NSString *kAPI_SERVER_BASE_URL = @"http://localhost:8080";
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    UINavigationItem *navItem = [self navigationItem];
+    [navItem setTitle:@"Quiz Lord"];
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"gear" ofType:@"png"];
+    UIImage *gearImage = [UIImage imageWithContentsOfFile:path];
+
+    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+                            initWithImage:gearImage
+                                    style:UIBarButtonItemStylePlain
+                                   target:self
+                                   action:@selector(showSettings:)];
+
+    [navItem setRightBarButtonItem:bbi];
   }
   
   return self;

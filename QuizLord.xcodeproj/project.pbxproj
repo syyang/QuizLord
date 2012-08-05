@@ -19,7 +19,7 @@
 		AD41A5B915C935DF001FC18C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD41A5B715C935DF001FC18C /* InfoPlist.strings */; };
 		AD41A5BC15C935DF001FC18C /* QuizLordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A5BB15C935DF001FC18C /* QuizLordTests.m */; };
 		AD41A5CF15C93D9A001FC18C /* QLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A5CE15C93D9A001FC18C /* QLViewController.m */; };
-		AD41A5D215C94169001FC18C /* QLViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */; };
+		AD41A5D215C94169001FC18C /* QLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD41A5D115C94169001FC18C /* QLViewController.xib */; };
 		AD41A60715CA6D30001FC18C /* quizlord.thrift in Resources */ = {isa = PBXBuildFile; fileRef = AD41A60615CA6D30001FC18C /* quizlord.thrift */; };
 		AD41A69415CA875C001FC18C /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67415CA875C001FC18C /* TBinaryProtocol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD41A69515CA875C001FC18C /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A67715CA875C001FC18C /* TProtocolException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -35,6 +35,9 @@
 		AD41A69F15CA875C001FC18C /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A69115CA875C001FC18C /* TTransportException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD41A6A015CA875C001FC18C /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A69315CA875C001FC18C /* TSharedProcessorFactory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD41A6B115CA8DE5001FC18C /* quizlord.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41A6B015CA8DE5001FC18C /* quizlord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ADE83BFA15CD358800138AB2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE83BF815CD358800138AB2 /* SettingsViewController.m */; };
+		ADE83BFB15CD358800138AB2 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE83BF915CD358800138AB2 /* SettingsViewController.xib */; };
+		ADE83BFF15CDEAB300138AB2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE83BFE15CDEAB300138AB2 /* gear.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +69,7 @@
 		AD41A5BB15C935DF001FC18C /* QuizLordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizLordTests.m; sourceTree = "<group>"; };
 		AD41A5CD15C93D9A001FC18C /* QLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLViewController.h; sourceTree = "<group>"; };
 		AD41A5CE15C93D9A001FC18C /* QLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLViewController.m; sourceTree = "<group>"; };
-		AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLViewController_iPhone.xib; sourceTree = "<group>"; };
+		AD41A5D115C94169001FC18C /* QLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLViewController.xib; sourceTree = "<group>"; };
 		AD41A60615CA6D30001FC18C /* quizlord.thrift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizlord.thrift; sourceTree = "<group>"; };
 		AD41A67315CA875C001FC18C /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
 		AD41A67415CA875C001FC18C /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
@@ -101,6 +104,10 @@
 		AD41A69315CA875C001FC18C /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
 		AD41A6AF15CA8DE5001FC18C /* quizlord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quizlord.h; sourceTree = "<group>"; };
 		AD41A6B015CA8DE5001FC18C /* quizlord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quizlord.m; sourceTree = "<group>"; };
+		ADE83BF715CD358800138AB2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		ADE83BF815CD358800138AB2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		ADE83BF915CD358800138AB2 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		ADE83BFE15CDEAB300138AB2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +137,7 @@
 		AD41A58715C935DE001FC18C = {
 			isa = PBXGroup;
 			children = (
+				ADE83BFD15CDEAB300138AB2 /* images */,
 				AD41A60615CA6D30001FC18C /* quizlord.thrift */,
 				AD41A6AE15CA8DE5001FC18C /* gen-cocoa */,
 				AD41A67115CA875C001FC18C /* thrift */,
@@ -168,7 +176,10 @@
 				AD41A59D15C935DE001FC18C /* Supporting Files */,
 				AD41A5CD15C93D9A001FC18C /* QLViewController.h */,
 				AD41A5CE15C93D9A001FC18C /* QLViewController.m */,
-				AD41A5D115C94169001FC18C /* QLViewController_iPhone.xib */,
+				AD41A5D115C94169001FC18C /* QLViewController.xib */,
+				ADE83BF715CD358800138AB2 /* SettingsViewController.h */,
+				ADE83BF815CD358800138AB2 /* SettingsViewController.m */,
+				ADE83BF915CD358800138AB2 /* SettingsViewController.xib */,
 			);
 			path = QuizLord;
 			sourceTree = "<group>";
@@ -274,6 +285,14 @@
 			path = "gen-cocoa";
 			sourceTree = "<group>";
 		};
+		ADE83BFD15CDEAB300138AB2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ADE83BFE15CDEAB300138AB2 /* gear.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,8 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD41A5A115C935DE001FC18C /* InfoPlist.strings in Resources */,
-				AD41A5D215C94169001FC18C /* QLViewController_iPhone.xib in Resources */,
+				AD41A5D215C94169001FC18C /* QLViewController.xib in Resources */,
 				AD41A60715CA6D30001FC18C /* quizlord.thrift in Resources */,
+				ADE83BFB15CD358800138AB2 /* SettingsViewController.xib in Resources */,
+				ADE83BFF15CDEAB300138AB2 /* gear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +421,7 @@
 				AD41A69F15CA875C001FC18C /* TTransportException.m in Sources */,
 				AD41A6A015CA875C001FC18C /* TSharedProcessorFactory.m in Sources */,
 				AD41A6B115CA8DE5001FC18C /* quizlord.m in Sources */,
+				ADE83BFA15CD358800138AB2 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +518,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuizLord/QuizLord-Prefix.pch";
 				INFOPLIST_FILE = "QuizLord/QuizLord-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -507,7 +531,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuizLord/QuizLord-Prefix.pch";
 				INFOPLIST_FILE = "QuizLord/QuizLord-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
